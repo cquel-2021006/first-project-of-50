@@ -1,0 +1,43 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.contenedor {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 25px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: 0.7s ;
+}
+
+.contenedor p {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.contenedor.active {
+    flex: 5;
+}
+
+.contenedor.active p {
+    opacity: 10;
+}
